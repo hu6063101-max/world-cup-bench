@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>世界杯替补席 · World Cup Bench</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <h1 id="title-bar">⚽ 世界杯替补席</h1>
+
+  <div id="game-area">
+    <canvas id="game" width="480" height="320"></canvas>
+
+    <!-- 结算 / 新闻 覆盖层 -->
+    <div id="news-overlay" class="hidden">
+      <div id="news-paper">
+        <div id="news-masthead">《世界杯八卦日报》</div>
+        <div id="news-headline"></div>
+        <div id="news-body"></div>
+        <div id="news-stats"></div>
+        <button id="btn-restart" class="pix-btn">🔄 重新开始（R）</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="controls">
+    <button class="pix-btn act-btn" id="btn-banana" data-action="banana">
+      <span class="key-hint">1</span>🍌 扔香蕉皮
+      <span class="cd-mask"></span>
+    </button>
+    <button class="pix-btn act-btn" id="btn-drink" data-action="drink">
+      <span class="key-hint">2</span>🥤 递能量饮料
+      <span class="cd-mask"></span>
+    </button>
+    <button class="pix-btn act-btn" id="btn-keeper" data-action="keeper">
+      <span class="key-hint">3</span>📢 干扰门将
+      <span class="cd-mask"></span>
+    </button>
+    <button class="pix-btn" id="btn-warmup">
+      <span class="key-hint">空格</span>🏃 假装热身（按住）
+    </button>
+  </div>
+
+  <div id="help">
+    <b>玩法：</b>你是替补，趁教练看球时按 <b>1/2/3</b> 搞事，提高己方（香蕉共和国）进球率。
+    教练回头前会出现 <b>⚠ 红色警告</b>，听到警告立刻停手并<b>按住空格假装热身</b>！
+    被教练看到搞事或没在热身，怀疑值上涨；<b>怀疑值满 = 被赶出球场</b>。坚持到 90 分钟看比分领新闻。
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
