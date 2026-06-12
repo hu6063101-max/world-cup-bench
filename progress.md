@@ -11,6 +11,10 @@
 ## Next（接下来）
 - 可选优化点（未排期）：BGM 开关按钮、最高分/历史战绩 localStorage、对方教练也会搞事的"对抗模式"
 
+## 已部署
+- 🌐 在线试玩：https://hu6063101-max.github.io/world-cup-bench/
+- 仓库：https://github.com/hu6063101-max/world-cup-bench （master 分支根目录即 Pages 源）
+
 ## 已完成
 - ✅ 项目骨架 index.html / style.css / game.js（2026-06-12）
 - ✅ 完整游戏循环：标题 → 比赛 → 终场/被驱逐 → 搞笑新闻 → 重开（2026-06-12）
